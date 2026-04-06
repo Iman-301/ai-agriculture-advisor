@@ -1,0 +1,34 @@
+{
+  "farmers": [
+    {
+      "profile_id": "fp_001",
+      "phone_e164": "+251911000001",
+      "display_name": "Aster T.",
+      "national_id": null,
+      "location": {
+        "region": "Oromia",
+        "zone": "East Shewa",
+        "woreda": "Ada Berg",
+        "kebele": null
+      },
+      "preferred_crops": ["teff", "maize"],
+      "language_pref": "am",
+      "interaction_history": []
+    },
+    {
+      "profile_id": "fp_002",
+      "phone_e164": "+251922000002",
+      "display_name": "Kebede M.",
+      "national_id": null,
+      "location": {
+        "region": "Amhara",
+        "zone": "North Gondar",
+        "woreda": "Debark",
+        "kebele": null
+      },
+      "preferred_crops": ["wheat", "barley"],
+      "language_pref": "am",
+      "interaction_history": []
+    }
+  ]
+}

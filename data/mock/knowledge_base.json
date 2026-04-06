@@ -1,0 +1,70 @@
+{
+  "documents": [
+    {
+      "id": "doc_001",
+      "crop": "teff",
+      "topic": "fertilizer",
+      "region_tags": ["national", "oromia", "amhara"],
+      "keywords": ["fertilizer", "dap", "urea", "npk", "እርሳስ", "ማዳመጃ"],
+      "content": "Teff (ጤፍ) typically needs 50–80 kg/ha DAP at planting. Apply urea top-dressing 40–50 kg/ha about 30 days after emergence. Adjust with soil test when available.",
+      "source": "MoA Teff Production Guide (Mock)",
+      "version": "2024.1",
+      "status": "approved"
+    },
+    {
+      "id": "doc_002",
+      "crop": "teff",
+      "topic": "pest_disease",
+      "region_tags": ["national"],
+      "keywords": ["disease", "rust", "fungus", "pest", "symptom", "ህመም", "በሽታ"],
+      "content": "Teff rust shows yellow-orange pustules on leaves. At first symptoms, consider Mancozeb 80% WP per local extension label; confirm diagnosis with extension if unsure.",
+      "source": "EIAR Teff Protection (Mock)",
+      "version": "2024.1",
+      "status": "approved"
+    },
+    {
+      "id": "doc_003",
+      "crop": "wheat",
+      "topic": "fertilizer",
+      "region_tags": ["national"],
+      "keywords": ["fertilizer", "nps", "urea", "ስንዴ"],
+      "content": "Wheat often uses 100–120 kg/ha NPS at planting and ~50 kg/ha urea at tillering. Split applications reduce lodging risk on fertile soils.",
+      "source": "MoA Wheat Guide (Mock)",
+      "version": "2024.1",
+      "status": "approved"
+    },
+    {
+      "id": "doc_004",
+      "crop": "maize",
+      "topic": "planting",
+      "region_tags": ["national", "snnpr"],
+      "keywords": ["planting", "spacing", "seed", "ማዝ", "መዝራት"],
+      "content": "Maize: common spacing ~75 cm between rows and 25–30 cm within row depending on variety. Plant at reliable soil moisture; follow recommended seed rate on bag.",
+      "source": "MoA Maize Agronomy (Mock)",
+      "version": "2024.1",
+      "status": "approved"
+    },
+    {
+      "id": "doc_005",
+      "crop": "general",
+      "topic": "irrigation",
+      "region_tags": ["national"],
+      "keywords": ["water", "irrigation", "drought", "ማጠጣት"],
+      "content": "Irrigate based on crop stage and soil moisture. Avoid waterlogging; many highland cereals are sensitive to poor drainage.",
+      "source": "General Agronomy FAQ (Mock)",
+      "version": "2024.1",
+      "status": "approved"
+    },
+    {
+      "id": "doc_006",
+      "crop": "teff",
+      "topic": "harvest",
+      "region_tags": ["national"],
+      "keywords": ["harvest", "threshing", "yield", "መከር"],
+      "content": "Harvest teff when grains are hard and moisture is appropriate for storage. Dry grain safely before storage to reduce mold.",
+      "source": "Post-harvest Brief (Mock)",
+      "version": "2024.1",
+      "status": "approved"
+    }
+  ]
+}

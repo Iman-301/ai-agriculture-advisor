@@ -1,0 +1,50 @@
+{
+  "currency": "ETB",
+  "unit": "kg",
+  "records": [
+    {
+      "id": "mkt_001",
+      "commodity": "teff",
+      "commodity_aliases": ["ጤፍ", "tef"],
+      "market": "Addis Ababa",
+      "region": "Addis Ababa",
+      "low_price": 45.0,
+      "high_price": 52.0,
+      "as_of": "2026-03-28T12:00:00Z",
+      "source": "Ethiopia Commodity Exchange (Mock)"
+    },
+    {
+      "id": "mkt_002",
+      "commodity": "wheat",
+      "commodity_aliases": ["ስንዴ"],
+      "market": "Addis Ababa",
+      "region": "Addis Ababa",
+      "low_price": 34.0,
+      "high_price": 41.0,
+      "as_of": "2026-03-28T12:00:00Z",
+      "source": "ECX (Mock)"
+    },
+    {
+      "id": "mkt_003",
+      "commodity": "maize",
+      "commodity_aliases": ["በቆሎ", "corn"],
+      "market": "Hawassa",
+      "region": "Sidama",
+      "low_price": 22.0,
+      "high_price": 28.0,
+      "as_of": "2026-03-27T09:00:00Z",
+      "source": "Regional bulletin (Mock)"
+    },
+    {
+      "id": "mkt_004",
+      "commodity": "teff",
+      "commodity_aliases": ["ጤፍ"],
+      "market": "Bahir Dar",
+      "region": "Amhara",
+      "low_price": 42.0,
+      "high_price": 48.0,
+      "as_of": "2026-03-26T15:00:00Z",
+      "source": "Woreda market survey (Mock)"
+    }
+  ]
+}
