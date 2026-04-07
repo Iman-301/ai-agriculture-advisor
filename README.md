@@ -42,11 +42,15 @@ uvicorn main:app --reload
 *   **API Docs:** Once running, navigate to `http://localhost:8000/docs`.
 *   **Health Check:** `http://localhost:8000/health`
 
+
+
 ### 2. CLI Mode
 You can interact with the conversational logic locally via the terminal:
 ```bash
 python src/cli/chatbot_cli.py
 ```
+
+
 
 ## Running Tests
 
