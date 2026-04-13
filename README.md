@@ -34,7 +34,61 @@ This repository contains the foundational backend logic for the advisory system,
 
 ## Running the Application
 
-### 1. Web Service (FastAPI)
+### 0. Dedicated STT/TTS services (recommended first)
+
+Run STT and TTS independently to validate Amharic speech flow before telephony.
+
+1) Start STT service:
+```bash
+python -m uvicorn stt_service.main:app --host 0.0.0.0 --port 8001
+```
+
+2) Start TTS service:
+```bash
+python -m uvicorn tts_service.main:app --host 0.0.0.0 --port 8002
+```
+
+3) Test STT (Amharic WAV -> text):
+```bash
+curl -X POST "http://127.0.0.1:8001/transcribe" -F "audio=@sample_amharic.wav"
+```
+
+4) Test TTS (Amharic text -> MP3):
+```bash
+curl -X POST "http://127.0.0.1:8002/synthesize" \
+  -H "Content-Type: application/json" \
+  -d "{\"text\":\"ሰላም፣ ይህ የሙከራ የድምፅ መልዕክት ነው።\",\"lang\":\"am\"}" \
+  --output speech.mp3
+```
+
+Requirements for STT/TTS:
+- `pip install -r requirements.txt`
+- For STT: install [FFmpeg](https://ffmpeg.org/download.html) and add to PATH.
+- First STT run downloads `openai/whisper-small` model from Hugging Face.
+- TTS uses `gTTS`, so internet access is required.
+
+### 1. Voice CLI (Speech-to-Speech)
+Test the full voice pipeline with speech recognition and text-to-speech:
+```bash
+python -m src.cli.voice_cli
+```
+
+**Important Notes:**
+- **ASR (Speech Recognition):** Set `GROQ_API_KEY` in `.env` for free Whisper ASR
+  - ⚠️ **Amharic Limitation:** Whisper has limited Amharic support. Transcription accuracy may be poor for Amharic speech.
+  - For testing, consider using mock ASR (remove `GROQ_API_KEY` from `.env`)
+- **TTS (Text-to-Speech):** Uses gTTS (free, no API key needed)
+  - Requires: `pip install gtts pygame`
+  - Speaks responses in Amharic through your speakers
+
+**Mock ASR Testing:**
+```bash
+# Remove GROQ_API_KEY from .env, then:
+python -m src.cli.voice_cli
+# Press Enter (no file path) to use mock Amharic questions
+```
+
+### 2. Web Service (FastAPI)
 Run the API server which will act as the webhook endpoint for telephony providers (like Twilio):
 ```bash
 uvicorn main:app --reload
@@ -44,7 +98,7 @@ uvicorn main:app --reload
 
 
 
-### 2. CLI Mode
+### 3. Text CLI Mode
 You can interact with the conversational logic locally via the terminal:
 ```bash
 python src/cli/chatbot_cli.py
