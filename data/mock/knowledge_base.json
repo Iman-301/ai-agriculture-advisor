@@ -6,7 +6,7 @@
       "topic": "fertilizer",
       "region_tags": ["national", "oromia", "amhara"],
       "keywords": ["fertilizer", "dap", "urea", "npk", "እርሳስ", "ማዳመጃ"],
-      "content": "Teff (ጤፍ) typically needs 50–80 kg/ha DAP at planting. Apply urea top-dressing 40–50 kg/ha about 30 days after emergence. Adjust with soil test when available.",
+      "content": "ጤፍ በመዝራት ጊዜ ብዙ ጊዜ 50–80 ኪ.ግ/ሄክታር DAP ይፈልጋል። ከተበቀለ 30 ቀን በኋላ 40–50 ኪ.ግ/ሄክታር ዩሪያ እንደ top-dressing ይጨምሩ። ከተቻለ በአፈር ምርመራ ውጤት መሰረት ያስተካክሉ።",
       "source": "MoA Teff Production Guide (Mock)",
       "version": "2024.1",
       "status": "approved"
@@ -17,7 +17,7 @@
       "topic": "pest_disease",
       "region_tags": ["national"],
       "keywords": ["disease", "rust", "fungus", "pest", "symptom", "ህመም", "በሽታ"],
-      "content": "Teff rust shows yellow-orange pustules on leaves. At first symptoms, consider Mancozeb 80% WP per local extension label; confirm diagnosis with extension if unsure.",
+      "content": "የጤፍ ዝገት በቅጠል ላይ ቢጫ-ብርቱካናማ ትንሽ እብጠት እንደሚመስል ይታያል። ምልክቱ ሲጀምር በአካባቢ መመሪያ መሰረት Mancozeb 80% WP ማስተዋወቅ ይቻላል፤ ካልተረጋገጠ ከኤክስቴንሽን ባለሙያ ጋር ያረጋግጡ።",
       "source": "EIAR Teff Protection (Mock)",
       "version": "2024.1",
       "status": "approved"
@@ -28,7 +28,7 @@
       "topic": "fertilizer",
       "region_tags": ["national"],
       "keywords": ["fertilizer", "nps", "urea", "ስንዴ"],
-      "content": "Wheat often uses 100–120 kg/ha NPS at planting and ~50 kg/ha urea at tillering. Split applications reduce lodging risk on fertile soils.",
+      "content": "ስንዴ በመዝራት ጊዜ ብዙ ጊዜ 100–120 ኪ.ግ/ሄክታር NPS ይፈልጋል፣ በtillering ደረጃ ደግሞ ከ50 ኪ.ግ/ሄክታር ጋር የሚመሳሰል ዩሪያ ይጨምራል። በክፍል ክፍል መስጠት በረጅም አፈር ላይ የመውደቅ አደጋን ይቀንሳል።",
       "source": "MoA Wheat Guide (Mock)",
       "version": "2024.1",
       "status": "approved"
@@ -39,7 +39,7 @@
       "topic": "planting",
       "region_tags": ["national", "snnpr"],
       "keywords": ["planting", "spacing", "seed", "ማዝ", "መዝራት"],
-      "content": "Maize: common spacing ~75 cm between rows and 25–30 cm within row depending on variety. Plant at reliable soil moisture; follow recommended seed rate on bag.",
+      "content": "በቆሎ ለብዙ ዝርያዎች በመስመር መካከል 75 ሴ.ሜ እና በተክል መካከል 25–30 ሴ.ሜ ርቀት ይጠበቃል። በቂ እርጥበት ሲኖር ይዝሩ እና በዘር ከረጢት ላይ የተጻፈውን የዘር መጠን ይከተሉ።",
       "source": "MoA Maize Agronomy (Mock)",
       "version": "2024.1",
       "status": "approved"
@@ -50,7 +50,7 @@
       "topic": "irrigation",
       "region_tags": ["national"],
       "keywords": ["water", "irrigation", "drought", "ማጠጣት"],
-      "content": "Irrigate based on crop stage and soil moisture. Avoid waterlogging; many highland cereals are sensitive to poor drainage.",
+      "content": "የማጠጣት ውሳኔ በተክል እድገት ደረጃ እና በአፈር እርጥበት ላይ ይመሰረት። ውሃ እንዳይቆም ይጠንቀቁ፤ ብዙ የከፍተኛ ቦታ እህሎች ከክፉ የውሃ ፍሳሽ ጋር ይጎዳሉ።",
       "source": "General Agronomy FAQ (Mock)",
       "version": "2024.1",
       "status": "approved"
@@ -61,7 +61,7 @@
       "topic": "harvest",
       "region_tags": ["national"],
       "keywords": ["harvest", "threshing", "yield", "መከር"],
-      "content": "Harvest teff when grains are hard and moisture is appropriate for storage. Dry grain safely before storage to reduce mold.",
+      "content": "የጤፍ እህል ሲጠነክር እና ለማከማቻ ተስማሚ እርጥበት ሲኖር ይከርፉ። ከማከማቸት በፊት በደህና ማድረቅ ፈንገስ እንዳይፈጠር ይረዳል።",
       "source": "Post-harvest Brief (Mock)",
       "version": "2024.1",
       "status": "approved"

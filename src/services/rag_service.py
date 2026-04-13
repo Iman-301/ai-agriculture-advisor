@@ -39,8 +39,8 @@ class RAGService:
             summary = self._market.format_summary(mrec)
             if not summary:
                 return (
-                    "I could not find a matching mock price record. Try naming the crop "
-                    "(teff, wheat, maize) or a market/region.",
+                    "ተመሳሳይ የmock ዋጋ መረጃ አልተገኘም። እባክዎ ምርቱን "
+                    "(ጤፍ፣ ስንዴ፣ በቆሎ) ወይም ገበያ/ክልል ስም ይጥቀሱ።",
                     [],
                     0.25,
                 )
@@ -54,16 +54,16 @@ class RAGService:
                     )
                 )
             text = (
-                f"Market snapshot (mock data): {summary} "
-                "Prices change often—verify with local extension or market notice."
+                f"የገበያ አጭር ሪፖርት (mock data): {summary} "
+                "ዋጋ ብዙ ጊዜ ይለዋዋጣል፤ ከአካባቢዎ ገበያ ማስታወቂያ ወይም ኤክስቴንሽን ጋር ያረጋግጡ።"
             )
             return text, refs, 0.75
 
         hits = self._kb.search(question, k=self._top_k, crop_hint=crop_hint)
         if not hits:
             return (
-                "I did not find approved mock guidance for that. Please name the crop "
-                "or ask about fertilizer, disease, planting, or harvest.",
+                "ለዚህ ጥያቄ የተረጋገጠ የmock መመሪያ አልተገኘም። "
+                "እባክዎ ተክሉን ይግለጹ ወይም ስለ ማዳመጃ፣ በሽታ፣ መዝራት ወይም መከር ይጠይቁ።",
                 [],
                 0.2,
             )
@@ -85,7 +85,7 @@ class RAGService:
 
         merged = " ".join(lines[:3])
         answer = (
-            f"Based on validated mock sources: {merged} "
-            "If symptoms are severe or unclear, contact your local extension worker."
+            f"በተረጋገጡ የmock ምንጮች መሰረት: {merged} "
+            "ምልክቶች ከባድ ወይም ግልጽ ካልሆኑ የአካባቢዎን ኤክስቴንሽን ባለሙያ ያነጋግሩ።"
         )
         return answer, refs, conf

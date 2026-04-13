@@ -24,6 +24,8 @@ class Settings(BaseSettings):
     google_application_credentials: str | None = Field(
         default=None, alias="GOOGLE_APPLICATION_CREDENTIALS"
     )
+    groq_api_key: str | None = Field(default=None, alias="GROQ_API_KEY")
+    elevenlabs_api_key: str | None = Field(default=None, alias="ELEVENLABS_API_KEY")
     twilio_account_sid: str | None = Field(default=None, alias="TWILIO_ACCOUNT_SID")
     twilio_auth_token: str | None = Field(default=None, alias="TWILIO_AUTH_TOKEN")
 

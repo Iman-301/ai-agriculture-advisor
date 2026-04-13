@@ -29,8 +29,8 @@ class SafetyGuard:
 
         safe_text = (
             f"{draft.text} "
-            "Safety note: follow product labels and your local extension worker for chemicals "
-            "and fertilizer rates."
+            "ማስጠንቀቂያ: ለኬሚካሎች እና ማዳበሪያ መጠን የምርት መለያ ላይ ያለውን መመሪያ ይከተሉ "
+            "እና ከአካባቢዎ ኤክስቴንሽን ባለሙያ ጋር ያማክሩ።"
         )
         return ResponseBundle(
             text=safe_text,

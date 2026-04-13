@@ -50,6 +50,6 @@ class MarketDataRepository:
             except Exception:
                 as_of_s = str(as_of)[:10]
             lines.append(
-                f"{com} in {m}: ~{low:.0f}–{high:.0f} {self.currency}/{self.unit} (as of {as_of_s})."
+                f"{m} ገበያ - {com}: በአንፃር {low:.0f}–{high:.0f} {self.currency}/{self.unit} (እስከ {as_of_s})።"
             )
         return " ".join(lines)
